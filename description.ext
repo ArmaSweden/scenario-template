@@ -1,4 +1,4 @@
-﻿// Template version 8
+﻿// Template version 9
 
 author = "Unknown of Arma Sweden";
 onLoadName = "Template";
@@ -10,20 +10,8 @@ respawn = 3;
 respawnDelay = 30;
 respawnOnStart = 0;
 respawnDialog = 0;
-respawnTemplates[] = {"CustomSpectator", "Wave", "MenuPosition"};
 respawnTemplatesVirtual[] = {};
 
 disabledAI = 1;
 joinUnassigned = 1;
 enableDebugConsole = 1;
-
-class CfgRespawnTemplates
-{
-	class CustomSpectator
-	{
-		onPlayerKilled = "respawn\customSpectator.sqf";
-		onPlayerRespawn = "";
-		respawnDelay = 30;
-		respawnOnStart = 0;
-	};
-};
