@@ -18,41 +18,19 @@ if (isClass(configfile >> "CfgPatches" >> "ace_common")) then {
 	player addMagazine "ACE_Chemlight_HiYellow";
 	player addMagazine "ACE_Chemlight_HiBlue";
 
-	if (!isNull(unitBackpack player)) then {
+	for "_i" from 1 to 3 do {player addItem "ACE_quikclot";};
+	for "_i" from 1 to 3 do {player addItem "ACE_elasticBandage";};
+	for "_i" from 1 to 3 do {player addItem "ACE_packingBandage";};
+	for "_i" from 1 to 3 do {player addItem "ACE_tourniquet";};
+	for "_i" from 1 to 2 do {player addItem "ACE_splint";};
+	for "_i" from 1 to 2 do {player addItem "ACE_epinephrine";};
+	for "_i" from 1 to 2 do {player addItem "ACE_morphine";};
 
-		for "_i" from 1 to 3 do {player addItemToBackpack "ACE_quikclot";};
-		for "_i" from 1 to 3 do {player addItemToBackpack "ACE_elasticBandage";};
-		for "_i" from 1 to 3 do {player addItemToBackpack "ACE_packingBandage";};
-		for "_i" from 1 to 3 do {player addItemToBackpack "ACE_tourniquet";};
-		for "_i" from 1 to 2 do {player addItemToBackpack "ACE_splint";};
-		for "_i" from 1 to 2 do {player addItemToBackpack "ACE_epinephrine";};
-		for "_i" from 1 to 2 do {player addItemToBackpack "ACE_morphine";};
+	if (isClass(configfile >> "CfgPatches" >> "aceP_main")) then {
 
-		if (isClass(configfile >> "CfgPatches" >> "aceP_main")) then {
+		// ACE Pharmacy is loaded
 
-				// ACE Pharmacy is loaded
-
-				for "_i" from 1 to 1 do {player addItemToBackpack "kat_Painkiller";};
-
-		};
-
-	} else {
-
-		for "_i" from 1 to 3 do {player addItem "ACE_quikclot";};
-		for "_i" from 1 to 3 do {player addItem "ACE_elasticBandage";};
-		for "_i" from 1 to 3 do {player addItem "ACE_packingBandage";};
-		for "_i" from 1 to 3 do {player addItem "ACE_tourniquet";};
-		for "_i" from 1 to 2 do {player addItem "ACE_splint";};
-		for "_i" from 1 to 2 do {player addItem "ACE_epinephrine";};
-		for "_i" from 1 to 2 do {player addItem "ACE_morphine";};
-
-		if (isClass(configfile >> "CfgPatches" >> "aceP_main")) then {
-
-			// ACE Pharmacy is loaded
-
-			for "_i" from 1 to 1 do {player addItem "kat_Painkiller";};
-
-		};
+		for "_i" from 1 to 1 do {player addItem "kat_Painkiller";};
 
 	};
 
