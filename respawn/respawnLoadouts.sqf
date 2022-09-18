@@ -174,14 +174,14 @@ if (isClass(configfile >> "CfgPatches" >> "ace_common")) then {
 		case "Combat Life Saver": {
 
 			player addItemToBackpack "Medikit";
-        	for "_i" from 1 to 12 do {player addItemToBackpack "FirstAidKit";};
+			for "_i" from 1 to 12 do {player addItemToBackpack "FirstAidKit";};
 
 		};
 
 		case "Helicopter Crewman (Medic)": {
 
 			player addItemToBackpack "Medikit";
-        	for "_i" from 1 to 12 do {player addItemToBackpack "FirstAidKit";};
+			for "_i" from 1 to 12 do {player addItemToBackpack "FirstAidKit";};
 
 		};
 
@@ -213,8 +213,8 @@ if (isClass(configfile >> "CfgPatches" >> "ace_common")) then {
 
 	player linkItem "ItemGPS";
 	player addMagazine "Chemlight_yellow";
-    player addMagazine "Chemlight_blue";
-    for "_i" from 1 to 3 do {player addItem "FirstAidKit";};
+	player addMagazine "Chemlight_blue";
+	for "_i" from 1 to 3 do {player addItem "FirstAidKit";};
 
 };
 
@@ -228,7 +228,7 @@ if (isClass(configfile >> "CfgPatches" >> "acex_main")) then {
 
 if (isClass(configfile >> "CfgPatches" >> "ASE_AimpointCS")) then {
 
-    // Arma Sweden Extras is loaded
+	// Arma Sweden Extras is loaded
 
 	if ("sfp_optic_aimpoint" in primaryWeaponItems player) then {
 
